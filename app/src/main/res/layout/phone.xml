@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!--    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="this is phone!!!"
+        android:textColor="#ffffff"
+        android:textSize="40sp"
+        android:id="@+id/textView" />-->
+
+    <ListView
+        android:id="@+id/lv_call_record"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#efffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/tv_phone_number"></ListView>
+
+    <TextView
+        android:id="@+id/tv_call"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="#00CC33"
+        android:text="拨打电话"
+        android:textSize="45sp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="2dp"
+        android:layout_alignParentBottom="true"/>
+
+    <GridView
+        android:id="@+id/gv_dial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="3"
+        android:horizontalSpacing="2dp"
+        android:verticalSpacing="2dp"
+        android:layout_above="@id/tv_call"></GridView>
+
+    <ImageView
+        android:id="@+id/imv_back_number"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="@drawable/back"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_phone_number"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:textColor="#0044ff"
+        android:maxLines="1"
+        android:background="@drawable/textview_phone_number"
+        android:layout_toLeftOf="@id/imv_back_number"/>
+
+    <ImageView
+        android:id="@+id/imv_delete_number"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/delete"
+        android:layout_alignRight="@id/tv_phone_number"
+        android:layout_margin="5dp"/>
+
+</RelativeLayout>

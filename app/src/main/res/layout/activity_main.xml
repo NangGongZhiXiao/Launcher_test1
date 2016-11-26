@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_001"
+    >
+
+    <com.example.ljh.launcher_test1.MyRadioGrou
+        android:id="@+id/mrg"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#00000000"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="20dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rab_map"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:button="@null"
+            android:background="@drawable/map_iconx"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <RadioButton
+            android:id="@+id/rab_music"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:button="@null"
+            android:background="@drawable/music_iconx"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <RadioButton
+            android:id="@+id/rab_phone"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:button="@null"
+            android:background="@drawable/phone_iconx"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <RadioButton
+            android:id="@+id/rab_puzzle"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:button="@null"
+            android:background="@drawable/puzzle_iconx"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <RadioButton
+            android:id="@+id/rab_home"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:button="@null"
+            android:background="@drawable/home_iconx"/>
+
+    </com.example.ljh.launcher_test1.MyRadioGrou>
+
+    <FrameLayout
+        android:layout_toRightOf="@id/mrg"
+        android:id="@+id/fra_concent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+
+
+
+</RelativeLayout>
